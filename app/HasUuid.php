@@ -12,9 +12,9 @@ trait HasUuid
      */
     public static function bootHasUuid()
     {
-        static::creating(function($model) {
+        static::creating(function ($model) {
             $model->incrementing = false;
-            $model->{$model->getKeyName()} = (string)Uuid::uuid4();
+            $model->{$model->getKeyName()} = (string) Uuid::uuid4();
         });
     }
 }

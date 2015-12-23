@@ -105,24 +105,32 @@ var Hangman = new Vue({
     game: []
   },
   methods: {
-  	startNewGame: function () {
-  		context.clearRect(0, 0, 300, 300);
+  	startNewGame: function (event) {
+  		// Reset visuals
+        context.clearRect(0, 0, 300, 300);
   		drawStand();
-  		container = document.getElementsByClassName('keyboard')[0]
+
+        // Reset any chosen characters from the previous game
+        container = document.getElementsByClassName('keyboard')[0]
   		btns = container.getElementsByTagName("button");
   		for(var i=0; i<btns.length; i++) {
   			btns[i].className = '';
   			btns[i].disabled = false;
   		}
+
+        // Request new game from API
   		Vue.http.post('/games', function(game)
         {
-        	// remove all used classnames from .keyboard
         	Hangman.game = game;
         });
   	},
-  	guess: function () {
-  		event.target.className = event.target.className + ' used';
+  	guess: function (event) {
+  		// Add class to button, and disable it
+        // Prevents reselecting the same letter.
+        event.target.className = event.target.className + ' used';
   		event.target.disabled = true;
+
+        // Submit the chosen letter to the API
   		Vue.http.put('/games/' + this.$data.game.id, {'character' : event.target.innerHTML}, function(game)
   		{
   			Hangman.game = game;
@@ -133,16 +141,6 @@ var Hangman = new Vue({
   			if (game.tries_left == 1) drawLeftLeg();
   			if (game.tries_left == 0) drawRightLeg();
   		});
-  	},
-  	greet: function (event) {
-      // `this` inside methods point to the Vue instance
-      alert('Hello ' + this.game.id + '!')
-      // `event` is the native DOM event
-      alert(event.target.tagName)
-    }
+  	}
   }
 });
-
-
-
-

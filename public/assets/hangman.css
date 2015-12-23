@@ -39,15 +39,11 @@ canvas {
 
 .keyboard {
 	font-family: 'Raleway', serif;
-	margin: 5% auto;
-}
-
-.keyboard div {
 	margin: 0 auto;
 	text-align: center;
 }
 
-.keyboard div button, button.startNew {
+.keyboard button, button.startNew {
 	display: inline-block;
 	width: 38px;
 	padding: 8px;
@@ -66,15 +62,15 @@ button.startNew {
 	margin-left: 75px;
 }
 
-.keyboard div button:hover {
+.keyboard button:hover {
 	background-color: #000;
 	color: #fff;
 }
-.keyboard div button.used {
+.keyboard button.used {
 	background-color: white;
 }
 
-.keyboard div button.used:hover {
+.keyboard button.used:hover {
 	background-color: white;
 	text-color: silver;
 }

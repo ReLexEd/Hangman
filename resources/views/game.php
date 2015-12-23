@@ -20,40 +20,9 @@
 			<div class="testWord">{{ game.word }}</div>
 
 			<div v-show="game.id" class="keyboard">
-				<div>
-					<button @click="guess()">a</button>
-					<button @click="guess()">b</button>
-					<button @click="guess('c')">c</button>
-					<button @click="guess('d')">d</button>
-					<button @click="guess('e')">e</button>
-					<button @click="guess('f')">f</button>
-					<button @click="guess('g')">g</button>
-				</div>
-				<div>
-					<button @click="guess('h')">h</button>
-					<button @click="guess('i')">i</button>
-					<button @click="guess('j')">j</button>
-					<button @click="guess('k')">k</button>
-					<button @click="guess('l')">l</button>
-					<button @click="guess('m')">m</button>
-					<button @click="guess('n')">n</button>
-				</div>
-				<div>
-					<button @click="guess('o')">o</button>
-					<button @click="guess('p')">p</button>
-					<button @click="guess('q')">q</button>
-					<button @click="guess('r')">r</button>
-					<button @click="guess('s')">s</button>
-					<button @click="guess('t')">t</button>
-					<button @click="guess('u')">u</button>
-				</div>
-				<div>
-					<button @click="guess('v')">v</button>
-					<button @click="guess('w')">w</button>
-					<button @click="guess('x')">x</button>
-					<button @click="guess('y')">y</button>
-					<button @click="guess('z')">z</button>
-				</div>
+				<?php foreach (range('a', 'z') as $k => $char): ?>
+				<button v-on:click="guess"><?=$char;?></button>
+				<?php endforeach;?>
 			</div>
 		</div>
 
