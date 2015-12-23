@@ -123,7 +123,7 @@ var Hangman = new Vue({
   	guess: function () {
   		event.target.className = event.target.className + ' used';
   		event.target.disabled = true;
-  		Vue.http.put('/games/' + this.$data.game.id + '/' + event.target.innerHTML, function(game)
+  		Vue.http.put('/games/' + this.$data.game.id, {'character' : event.target.innerHTML}, function(game)
   		{
   			Hangman.game = game;
   			if (game.tries_left == 5) drawHead();

@@ -21,4 +21,4 @@ $app->post('/games', 'GameController@startNewGame');
 
 
 // games/[:id]
-$app->put('/games/{id}/{letter}', 'GameController@guess');
+$app->put('/games/{id}', 'GameController@guess');

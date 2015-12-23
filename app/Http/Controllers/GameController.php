@@ -2,17 +2,19 @@
 
 namespace App\Http\Controllers;
 use \App\GameApi;
+use Illuminate\Http\Request;
 
 class GameController extends Controller
 {
     function startNewGame()
 	{
-		return GameApi::startNew();
+        return GameApi::startNew();
 	}
 
-	function guess($id, $letter)
+	function guess($id, Request $request)
 	{
-		return GameApi::guess($id, $letter);
+        $char = $request->input('character');
+		return GameApi::guess($id, $char);
 	}
 
 

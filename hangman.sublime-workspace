@@ -149,12 +149,20 @@
 	],
 	"file_history":
 	[
-		"/D/wwwroot/hangman/app/Http/routes.php",
-		"/D/wwwroot/hangman/app/Game.php",
-		"/D/wwwroot/hangman/resources/views/game.php",
-		"/D/wwwroot/hangman/public/assets/hangman.css",
-		"/D/wwwroot/hangman/public/assets/hangman.js",
 		"/D/wwwroot/hangman/app/GameApi.php",
+		"/D/wwwroot/hangman/resources/views/game.php",
+		"/D/wwwroot/hangman/public/assets/hangman.js",
+		"/D/wwwroot/hangman/app/Http/routes.php",
+		"/D/wwwroot/hangman/app/Http/Controllers/GameController.php",
+		"/D/wwwroot/hangman/README.md",
+		"/D/wwwroot/hangman/app/Exceptions/Handler.php",
+		"/D/wwwroot/hangman/app/ApiResponse.php",
+		"/D/wwwroot/hangman/app/Game.php",
+		"/D/wwwroot/hangman/app/HasUuid.php",
+		"/D/wwwroot/hangman/database/migrations/2015_12_21_174805_CreateGameTable.php",
+		"/D/wwwroot/hangman/database/migrations/2015_12_23_110447_ChangeGameTable.php",
+		"/D/wwwroot/hangman/database/migrations/2015_12_21_175514_AddColumnGameTableGuessed.php",
+		"/D/wwwroot/hangman/public/assets/hangman.css",
 		"/E/www/hangman/public/assets/hangman.js",
 		"/E/www/hangman/public/assets/hangman.css",
 		"/E/www/hangman/app/Exceptions/CharacterUsedException.php",
@@ -268,15 +276,7 @@
 		"/E/www/FusionInvoice/app/storage/logs/laravel.log",
 		"/E/www/ftp_v3/config/mail.php",
 		"/E/www/FusionInvoice/app/config/app.php",
-		"/E/www/FusionInvoice/app/start/artisan.php",
-		"/E/www/FusionInvoice/app/config/fi.php",
-		"/E/www/FusionInvoice/app/database/migrations/2014_04_26_034100_update.php",
-		"/E/www/FusionInvoice/app/database/migrations/2014_04_28_052539_invoice_transactions.php",
-		"/E/www/FusionInvoice/app/database/migrations/2014_05_03_054406_title_setting.php",
-		"/E/www/FusionInvoice/app/database/migrations/2014_05_09_074305_products.php",
-		"/E/www/FusionInvoice/app/database/migrations/2014_04_11_020152_install.php",
-		"/E/www/FusionInvoice/app/FI/Modules/Clients/Views/clients/index.blade.php",
-		"/E/www/FusionInvoice/app/config/database.php"
+		"/E/www/FusionInvoice/app/start/artisan.php"
 	],
 	"find":
 	{
@@ -468,6 +468,34 @@
 		"selected_items":
 		[
 			[
+				"gameap",
+				"app\\GameApi.php"
+			],
+			[
+				"gamecontr",
+				"app\\Http\\Controllers\\GameController.php"
+			],
+			[
+				"routes",
+				"app\\Http\\routes.php"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				".js",
+				"public\\assets\\hangman.js"
+			],
+			[
+				"game.",
+				"resources\\views\\game.php"
+			],
+			[
+				"handler",
+				"app\\Exceptions\\Handler.php"
+			],
+			[
 				"hangman.css",
 				"public\\assets\\hangman.css"
 			],
@@ -488,14 +516,6 @@
 				"public\\assets\\hangman.js"
 			],
 			[
-				"routes",
-				"app\\Http\\routes.php"
-			],
-			[
-				"game.",
-				"app\\Game.php"
-			],
-			[
 				"gamea",
 				"app\\GameApi.php"
 			],
@@ -504,16 +524,8 @@
 				"app\\GameApi.php"
 			],
 			[
-				"gamecontr",
-				"app\\Http\\Controllers\\GameController.php"
-			],
-			[
 				"route",
 				"app\\Http\\routes.php"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"request",
@@ -550,6 +562,10 @@
 		[
 			[
 				"",
+				"D:\\wwwroot\\ftp\\ftp.sublime-project"
+			],
+			[
+				"ft",
 				"D:\\wwwroot\\ftp\\ftp.sublime-project"
 			]
 		],
