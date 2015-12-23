@@ -159,6 +159,9 @@
 	],
 	"file_history":
 	[
+		"/D/wwwroot/hangman/README.md",
+		"/D/wwwroot/hangman/.env.example",
+		"/D/wwwroot/hangman/.env",
 		"/D/wwwroot/hangman/public/assets/hangman.js",
 		"/D/wwwroot/hangman/resources/views/game.php",
 		"/D/wwwroot/hangman/public/assets/hangman.css",
@@ -174,7 +177,6 @@
 		"/D/wwwroot/hangman/app/HasUuid.php",
 		"/D/wwwroot/hangman/app/GameApi.php",
 		"/C/Users/AlexR/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/D/wwwroot/hangman/README.md",
 		"/D/wwwroot/hangman/app/Http/routes.php",
 		"/D/wwwroot/hangman/app/Http/Controllers/GameController.php",
 		"/D/wwwroot/hangman/database/migrations/2015_12_21_174805_CreateGameTable.php",
@@ -284,9 +286,7 @@
 		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/EnvironmentVariablesLoaderInterface.php",
 		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/FileEnvironmentVariablesLoader.php",
 		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/FileLoader.php",
-		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/LoaderInterface.php",
-		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/Repository.php",
-		"/E/www/FusionInvoice/app/config/mail.php"
+		"/E/www/FusionInvoice/vendor/laravel/framework/src/Illuminate/Config/LoaderInterface.php"
 	],
 	"find":
 	{
@@ -478,6 +478,14 @@
 		"selected_items":
 		[
 			[
+				".env",
+				".env"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
 				"hangman",
 				"public\\assets\\hangman.js"
 			],
@@ -488,10 +496,6 @@
 			[
 				"game.",
 				"resources\\views\\game.php"
-			],
-			[
-				"readme",
-				"README.md"
 			],
 			[
 				"route",
@@ -571,15 +575,15 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "ftp",
 		"selected_items":
 		[
 			[
-				"",
+				"ftp",
 				"D:\\wwwroot\\ftp\\ftp.sublime-project"
 			],
 			[
-				"ftp",
+				"",
 				"D:\\wwwroot\\ftp\\ftp.sublime-project"
 			],
 			[

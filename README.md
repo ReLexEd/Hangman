@@ -34,6 +34,9 @@ Every response should contain the following fields:
 ## Installation ##
 After cloning/downloading;
 - run [composer install] to retrieve the required dependencies;
+- create a .env file containing the database details (see .env.example)
+- php artisan migrate - To install the database tables
+- php artisan db::seed (only needed if using the word-generation from database option)
 - php artisan serve (to allow access to both the api and the frontend on http://localhost:8000)
 
 
